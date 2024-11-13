@@ -28,39 +28,6 @@ The Smart Printing Service aims to provide HCMUT students with a convenient, cen
 
    ```bash
    git clone https://tukisudo@github.com/tuankiet-sudo/H241-SE-Assignment-Group08.git
-Here is the entire content formatted as `README.md`:
-
-```markdown
-# H241 SE Assignment - Group 08: Smart Printing Service
-
-This repository contains the code and resources for the Smart Printing Service project for students at HCMUT, developed as part of the H241 Software Engineering assignment.
-
-## Project Overview
-
-The Smart Printing Service aims to provide HCMUT students with a convenient, centralized printing solution that supports file uploading, printer selection, print job customization, usage tracking, and secure payment for additional printing credits.
-
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Setup Instructions](#setup-instructions)
-- [Repository Setup](#repository-setup)
-- [Branching and Contributing](#branching-and-contributing)
-- [Project Requirements](#project-requirements)
-
-## Prerequisites
-
-1. **Git**: Ensure Git is installed on your computer. Download it from [git-scm.com](https://git-scm.com/).
-2. **GitHub Account**: Access permissions to the repository are required. Confirm you have been granted access.
-
-## Setup Instructions
-
-### 1. Clone the Repository
-
-1. Open your terminal (or Git Bash).
-2. Navigate to the directory where you want to clone the project.
-3. Run the following command to clone the repository:
-
-   ```bash
-   git clone https://tukisudo@github.com/tuankiet-sudo/H241-SE-Assignment-Group08.git
    ```
 4. After cloning, navigate into the repository's directory:
 

@@ -64,6 +64,8 @@ The Smart Printing Service aims to provide HCMUT students with a convenient, cen
 2. **Making Commits**: Ensure each commit has a clear and concise message summarizing the changes.
 
    ```bash
+   git add .
+   
    git commit -m "Messgage content."
    ```
 

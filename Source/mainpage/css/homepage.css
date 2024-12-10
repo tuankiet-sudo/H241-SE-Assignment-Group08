@@ -1,0 +1,119 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Inter, sans-serif; 
+}
+
+.home {
+    padding-top: 200px;
+    padding-bottom: 186px;
+    background: linear-gradient(180deg, #000040, #0000A6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.row__column{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dangnhapspsocolumnhcmutone-1{
+    color: white;
+    padding-left: 56px;
+    padding-right: 56px;
+    gap: var(--space-xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This ensures everything inside is vertically centered */
+    height: 100%; /* Ensure the container takes full height if it's not doing so already */
+
+}
+
+.row__column--sinh-vien {
+    margin-top: 50px;
+    gap: var(--space-lg);
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.row__button--sinh-vien,
+.row__button--spso {
+    color: white !important;
+    font-family: Unica One;
+    font-size: 36px;
+    background-color: gray!important;
+    box-shadow: -4px 4px 13px 0 #48628319 !important;
+    height: 65px;
+    width: 274px;
+    border-radius: 0 !important;
+    opacity: 70%;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row__button--sinh-vien,
+.row__button--spso {
+    margin-top: 10px;
+}
+
+.row__column--spso {
+    margin-top: -36px;
+    gap: var(--space-lg);
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+.dangnhapspsocolumnhcmutone__description {
+    text-align: center; /* Center the text horizontally */
+    color: white !important; /* Make the text white */
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    margin-top: 20px; /* Add space above if needed */
+    
+}
+
+.dangnhapspsocolumnhcmutone__description-span {
+    display: block; /* Ensure the line breaks are respected */
+    margin: 0; /* Optional: remove default margin if any */
+
+}
+
+/* Hiệu ứng hover */
+.row__button--sinh-vien:hover, .row__button--spso:hover {
+    background-color: #B0B0B0; /* Màu xám đậm hơn khi hover */
+    transform: translateY(-14px); /* Nút nhô lên nhẹ */
+    box-shadow: 0px 6px 8px rgba(99, 99, 99, 0.7); /* Tăng bóng đổ */
+}
+
+

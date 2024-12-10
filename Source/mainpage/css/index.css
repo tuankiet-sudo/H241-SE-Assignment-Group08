@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+    margin: unset;
+}
+
+.sidebarlogorow_border {
+    backdrop-filter: blur(1px);
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(315deg, #b8b8b8, #918888);
+        background-clip: border-box;
+        mask: 
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+        mask-composite: exclude !important;
+        z-index: -10;
+        border-radius: 52px;
+        border: 4px solid transparent;
+    }
+}
+
+.imagerow_border {
+
+    backdrop-filter: blur(1px);
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(315deg, #ffffff, #0f00bc);
+        background-clip: border-box;
+        mask: 
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+        mask-composite: exclude !important;
+        z-index: -10;
+        border-radius: 50px;
+        border: 4px solid transparent;
+    }
+}
+
+img{
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+
+input{
+    background-color: transparent;
+    width: 100%;
+}
+
+a{
+    text-decoration:none;
+    display: block;
+}
+
+ul{
+    margin: 0;
+    margin-inline: unset !important;
+    padding: 0;
+    list-style: none;
+}
+
+[type="text"],
+input:where(:not([type])),
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select,
+button {
+  appearance: none;
+  border-color: unset;
+  border-width: 0;
+  border-radius: unset;
+  padding: unset;
+  font-size: unset;
+  line-height: unset;
+  color: inherit;
+}
+input:focus-visible,
+[multiple]:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+    outline: none;
+}
+  
+  

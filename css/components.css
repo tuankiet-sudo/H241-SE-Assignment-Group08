@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Space Grotesk;
+}
+
+#label-image{
+    width: 80%;
+    margin: 20px auto 40px;
+    padding: 10px 0px;
+    border: #928888 solid 4px;
+    border-radius: 200px;
+    text-align: center;
+
+}
+.sidebar {
+    width: 20%; /* Chiếm 20% chiều rộng */
+    height: 100%; /* Kéo dài toàn màn hình */
+    background: #13041A; /* Nền tối */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+#sidebar_header{
+    align-self: stretch; 
+    text-align: center;
+    color: white; 
+    font-size: 48px; 
+    font-weight: bold;
+}
+.sidebar-link, .btn{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5.19px 25px;
+    background-color: #FFFFFF;
+    border: 0px;
+    box-shadow: -4px 4px 13px rgba(72, 98, 132, 0.1);
+    border-radius: 200px;
+}
+.sidebar-link{
+        margin:50px 0px 0px 20px;
+}
+
+.clear-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+}
+
+#search-btn{
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: -4px 4px 13px rgba(72, 98, 132, 0.1);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+    width: 52%;
+    border: 0px;
+}
+
+#result{
+    display: none;
+    margin-top: 150px;
+    width: 700px;
+}
+#result-table{
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 600px;
+    border-radius: 20px;
+    display:flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    gap: 40px 0px;
+}
+.record{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px 10px;
+}
+.record-information-wrapper{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px 0px;
+}
+.record-information{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#log-out-button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    top: 14px;
+    right: 50px;
+    color: #B3B3B3;
+}
+
+.btn{
+    margin-top: 150px;
+}

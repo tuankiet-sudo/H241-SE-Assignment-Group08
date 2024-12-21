@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm yêu cầu in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage/studentOption.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/printRequest/style.css') }}">
+</head>
+<body>
+    <div class="student-container">
+        <!-- Sidebar bên trái -->
+        <div class="sidebar">
+            <a class="logo-container" href="/studentOption">
+                <img src="{{ url_for('static', filename='public/images/hcmut.png') }}" alt="Logo BK" class="logo">
+            </a>
+            <h2 class="sidebar-title">Thêm yêu cầu in</h2>
+            <a href="/printRequest" class="sidebar-btn">Thêm yêu cầu in</a>
+            <a href="/printDocument" class="sidebar-btn">In tài liệu</a>
+            <a href="/studentHistory" class="sidebar-btn">Lịch sử in</a>
+            <a href="/showRequestQueue" class="sidebar-btn">Hàng chờ in</a>
+        </div>
+
+        <!-- Phần chính -->
+        <div class="main-content">
+            <!-- Nút thoát -->
+            <a href="/" class="back-icon">
+                <img src="{{ url_for('static', filename='public/images/back-icon.png') }}" alt="Back">
+            </a>
+
+            <div class="new-content">
+                <div class="file-upload-container">
+                    <label for="file-upload" class="file-upload-label">Tải tài liệu lên</label>
+                    <input type="file" id="file-upload" class="file-upload-input">
+                </div>
+                
+                <div class="options-container">
+                    <div class="option">
+                        <label for="printer">Chọn máy in</label>
+                        <select id="printer">
+                            <option value="printer1">Máy in 1</option>
+                            <option value="printer2">Máy in 2</option>
+                            <option value="printer3">Máy in 3</option>
+                            <option value="printer4">Máy in 4</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="side">Chọn mặt</label>
+                        <select id="side">
+                            <option value="single">1 mặt</option>
+                            <option value="double">2 mặt</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="size">Chọn kích thước</label>
+                        <select id="size">
+                            <option value="a2">A2</option>
+                            <option value="a3">A3</option>
+                            <option value="a4">A4</option>
+                            <option value="a5">A5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="complete-btn">
+                    <a href="/printRequestComplete">
+                        <button id="completeBtn">Hoàn tất yêu cầu</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

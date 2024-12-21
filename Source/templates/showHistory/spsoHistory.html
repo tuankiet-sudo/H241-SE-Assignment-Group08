@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage/studentOption.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/showHistory/spso_History.css') }}">
+</head>
+<body>
+    <div class="student-container">
+        <!-- Sidebar bên trái -->
+        <div class="sidebar">
+            <a class="logo-container" href="/spsoOption">
+                <img src="{{ url_for('static', filename='public/images/hcmut.png') }}" alt="Logo BK" class="logo">
+            </a>
+            <h2 class="sidebar-title">Lịch sử in</h2>
+            <a href="/showHistorySPSO" class="sidebar-btn">Lịch sử in</a>
+            <a href="/showRequestQueueSPSO" class="sidebar-btn">Hàng chờ in</a>
+        </div>
+
+        <!-- Phần chính -->
+        <div class="main-content">
+            <!-- Nút thoát -->
+            <a href="/" class="back-icon">
+                <img src="{{ url_for('static', filename='public/images/back-icon.png') }}" alt="Back">
+            </a>
+            
+            <div id="option-container">
+                <h1 id="choose-header">Xem lịch sử:</h1>
+                <div id="option-wrapper">
+                    <a href="/showHistoryStudent">
+                        <button class="btn" id="student_query">Sinh viên</button>
+                    </a>
+                    <a href="/showHistoryPrinter">
+                        <button class="btn" id="printer_query">Máy in</button>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

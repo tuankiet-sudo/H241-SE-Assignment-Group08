@@ -1,0 +1,13 @@
+1. Installing Conda environment.
+
+    a. Create the virtual environment: conda create -n seproj5 python=3.10
+
+    b. Activate the virtual environment: conda activate seproj5
+
+    c. Installing required packages: pip install flask
+
+2. Start the prototype.
+
+    a. Direct to Source directory: cd Source
+
+    b. Run the Flask application: python app.py

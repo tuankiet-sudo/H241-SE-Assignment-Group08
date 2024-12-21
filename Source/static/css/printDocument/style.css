@@ -1,0 +1,117 @@
+/* main-right */
+.main-right {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logout icon */
+.main-right .inner-logout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-right .inner-logout i {
+    position: relative;
+    color: #b5b3b3;
+    font-size: 35px;
+    top: 10px;
+    right: 15px;
+}
+
+/* Print list */
+.main-right .inner-print-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Individual request item */
+.main-right .inner-print-list .inner-request {
+    background-color: #dee5ed;
+    color: #1a202c;
+    width: calc((100% - 100px) / 4); /* 4 items per row with gap */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Request title */
+.main-right .inner-print-list .inner-request .inner-request-title {
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Close icon for request title */
+.main-right .inner-print-list .inner-request .inner-request-title i {
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+}
+
+/* Request image */
+.main-right .inner-print-list .inner-request .inner-request-image {
+    padding: 45px 60px;
+}
+
+/* Request info section */
+.main-right .inner-print-list .inner-request .inner-request-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Printer info */
+.main-right .inner-print-list .inner-request .inner-request-info .inner-printer {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Info about quantity needed */
+.main-right .inner-print-list .inner-request .inner-request-info .inner-info {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center; /* Horizontally center text */
+}
+
+/* Print button */
+.button-print {
+    padding: 7px 17px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.button-not-cancel {
+    padding: 7px 17px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.button-cancel {
+    padding: 7px 17px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    background-color: #e74c3c;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+/* Credit remaining section */
+.main-right .inner-content {
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 30px;
+}

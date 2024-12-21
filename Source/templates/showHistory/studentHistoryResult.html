@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage/studentOption.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/showHistory/student_History.css') }}">
+</head>
+<body>
+    <div class="student-container">
+        <!-- Sidebar bên trái -->
+        <div class="sidebar">
+            <a class="logo-container" href="/studentOption">
+                <img src="{{ url_for('static', filename='public/images/hcmut.png') }}" alt="Logo BK" class="logo">
+            </a>
+            <h2 class="sidebar-title">Lịch sử in</h2>
+            <a href="/printRequest" class="sidebar-btn">Thêm yêu cầu in</a>
+            <a href="/printDocument" class="sidebar-btn">In tài liệu</a>
+            <a href="/studentHistory" class="sidebar-btn">Lịch sử in</a>
+            <a href="/showRequestQueue" class="sidebar-btn">Hàng chờ in</a>
+        </div>
+
+        <!-- Phần chính -->
+        <div class="main-content">
+            <!-- Nút thoát -->
+            <a href="/" class="back-icon">
+                <img src="{{ url_for('static', filename='public/images/back-icon.png') }}" alt="Back">
+            </a>
+            
+            <!-- Flex container for input-information and result sections -->
+            <div class="content-wrapper">
+                <!-- Left: input-information -->
+                <div id="input-information">
+                    <div class="input-container">
+                        <label class="input-label" for="start-date">Nhập ngày bắt đầu (mm-dd-yyy)
+                            <input type="date" id="start-date" placeholder="Ngày bắt đầu" class="date-input">
+                        </label>
+                    </div>
+                    <div class="input-container">
+                        <label class="input-label" for="end-date">Nhập ngày kết thúc (mm-dd-yyyy)
+                            <input type="date" id="end-date" placeholder="Ngày bắt đầu" class="date-input">
+                        </label>
+                    </div>
+                    <a href="/studentHistoryResult1">
+                        <button id="search-btn">Tìm kiếm</button>
+                    </a>
+                    <a href="/studentHistoryResult">
+                        <button id="search-btn">Tìm kiếm toàn bộ</button>
+                    </a>
+                </div>
+        
+                <!-- Right: result section -->
+                <div id="result">
+                    <h2 class="search-result-title">Kết quả tìm kiếm:</h2>
+                    <div id="result-table">
+                        <!-- The result records will be dynamically added here -->
+                        <div class="result-item">
+                            <img src="{{ url_for('static', filename='public/images/gallery.png') }}" alt="Image" class="result-image">
+                            <div class="result-text">
+                                <div class=result-header>
+                                    <h3 class="result-line">Tên tài liệu 1.docx</h3>
+                                    <h3 class="result-date">Ngày in: 01/12/2024</h3>
+                                </div>
+                                <p class="result-line">Máy in: 1</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <img src="{{ url_for('static', filename='public/images/gallery.png') }}" alt="Image" class="result-image">
+                            <div class="result-text">
+                                <div class=result-header>
+                                    <h3 class="result-line">Tên tài liệu 2.docx</h3>
+                                    <h3 class="result-date">Ngày in: 01/12/2024</h3>
+                                </div>
+                                <p class="result-line">Máy in: 1</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <img src="{{ url_for('static', filename='public/images/gallery.png') }}" alt="Image" class="result-image">
+                            <div class="result-text">
+                                <div class=result-header>
+                                    <h3 class="result-line">Tên tài liệu 3.docx</h3>
+                                    <h3 class="result-date">Ngày in: 02/12/2024</h3>
+                                </div>
+                                <p class="result-line">Máy in: 2</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <img src="{{ url_for('static', filename='public/images/gallery.png') }}" alt="Image" class="result-image">
+                            <div class="result-text">
+                                <div class=result-header>
+                                    <h3 class="result-line">Tên tài liệu 4.docx</h3>
+                                    <h3 class="result-date">Ngày in: 05/12/2024</h3>
+                                </div>
+                                <p class="result-line">Máy in: 3</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <img src="{{ url_for('static', filename='public/images/gallery.png') }}" alt="Image" class="result-image">
+                            <div class="result-text">
+                                <div class=result-header>
+                                    <h3 class="result-line">Tên tài liệu 5.docx</h3>
+                                    <h3 class="result-date">Ngày in: 05/12/2024</h3>
+                                </div>
+                                <p class="result-line">Máy in: 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+        </div>
+    </div>
+</body>
+</html>

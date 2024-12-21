@@ -1,0 +1,280 @@
+/* Styling for content-wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px;
+    width: 90%;
+    height: 70%;
+}
+
+/* Adjust input-information to take 30% of the width */
+#input-information {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* 30% of content-wrapper */
+    height: 54%;
+}
+
+/* Adjust input-information to take 30% of the width */
+#input-information-2 {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* 30% of content-wrapper */
+    height: 24%;
+}
+
+/* Adjust result section to take 70% of the width */
+#result {
+    padding: 30px;
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%; /* 70% of content-wrapper */
+    height: 100%;
+}
+
+/* General Styling for Input and Result Containers */
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.date-input, .text-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Prevents overflow of padding */
+}
+
+.date-input:focus, .text-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+#search-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#search-btn:hover {
+    background-color: #357ab7;
+}
+
+/* Styling the Result Section */
+#result h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#result-table {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 450px; /* Set a max height for scrolling */
+    overflow-y: auto;  /* Allow vertical scrolling */
+    padding-right: 10px; /* Optional: prevent text from overlapping scrollbar */
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    background-color: #dee5ed;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.result-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-header {
+    display: flex; 
+    justify-content: space-between; /* Ensures space between h3 and the date */
+    align-items: center;
+    width: 100%; /* Ensures both items fit in a single row */
+}
+
+.result-line {
+    font-size: 16px;
+    color: #333;
+}
+
+.result-line:first-child {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.result-line:last-child {
+    color: #666;
+}
+
+/* Styling for the date element */
+.result-date {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle; /* Ensures the date aligns vertically with the h3 */
+    margin-left: 170px; /* Adds space between document name and the date */
+}
+
+.result-date-2 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle; /* Ensures the date aligns vertically with the h3 */
+    margin-left: 100px; /* Adds space between document name and the date */
+}
+
+/* Individual Record Item */
+.record {
+    display: flex;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.record img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.record-information-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.record-information {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.record-information h2 {
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.record-information .record-information > h2 {
+    margin: 0;
+}
+
+/* Styling for the search result title */
+.search-result-title {
+    color: white;             /* Make text color black */
+    font-size: 25px;          /* Set font size */
+    text-align: center;       /* Center align the text */
+    padding-left: 0;          /* Remove the left padding */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    #input-information {
+        padding: 20px;
+        width: 100%; /* Full width for mobile */
+    }
+
+    #result {
+        width: 100%; /* Full width for mobile */
+    }
+
+    #search-btn {
+        font-size: 16px;
+    }
+
+    .record {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .record img {
+        margin-bottom: 10px;
+    }
+}
+
+#option-container {
+    text-align: center; /* Center the text inside the container */
+    background-color: #fff; /* White background for the container */
+    padding: 30px; /* Padding around the content */
+    border-radius: 8px; /* Round the corners of the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#choose-header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+#option-wrapper {
+    display: flex; /* Use flexbox to lay out the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Add space between buttons */
+}
+
+.btn {
+    background-color: #4a90e2; /* Blue background for the buttons */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn:hover {
+    background-color: #357ab7; /* Darker blue when hovering */
+}
+
+/* Optional: Add a media query for mobile responsiveness */
+@media (max-width: 768px) {
+    #option-container {
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    .btn {
+        font-size: 14px; /* Smaller buttons on small screens */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}

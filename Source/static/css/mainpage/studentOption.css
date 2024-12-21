@@ -1,0 +1,120 @@
+/* Reset mặc định */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000040, #0000A6); /* Gradient nền */
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/* Container chính */
+.student-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar bên trái */
+.sidebar {
+    width: 20%; /* Chiếm 20% chiều rộng */
+    height: 100%; /* Kéo dài toàn màn hình */
+    background: #1A1A2E; /* Nền tối */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Logo */
+.logo-container{
+    width: 200px; /* Kích thước logo */
+    height: 100px;
+    border: 3px solid grey;
+    border-radius: 70px;
+    padding: 10px;
+    background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+}
+
+.logo {
+
+    width: 90px;
+    height: auto;
+    display: block;
+    padding-left: 56px; 
+}
+
+/* Tiêu đề sidebar */
+.sidebar-title {
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Nút trong sidebar */
+.sidebar-btn {
+    text-decoration: none;
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sidebar-btn:hover {
+    background: #f1f1f1;
+}
+
+/* Phần chính */
+.main-content {
+    width: 80%; /* Chiếm phần còn lại */
+    height: 100%; /* Chiều cao toàn màn hình */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Để đặt nút thoát */
+}
+
+/* Nút back-icon */
+.back-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.back-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.back-icon img:hover {
+    background: #626262;
+}
+
+/* Icon máy in */
+.printer-icon {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 350px;
+}
+
+.printer-icon img {
+    left: 50%;
+    width: 350px;
+    height: auto;
+}

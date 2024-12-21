@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPSO Options</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mainpage/spsoOption.css') }}"/>
+    <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename='css/mainpage/font.css') }}"/>
+    <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename='css/mainpage/styles.css') }}"/>
+    <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename='css/mainpage/components.css') }}"/>
+</head>
+<body>
+    <div class="spso-container">
+        <!-- Sidebar bên trái -->
+        <div class="sidebar">
+            <a class="logo-container" href="/spsoOption">
+                <img src="{{ url_for('static', filename='public/images/hcmut.png') }}" alt="Logo BK" class="logo">
+            </a>
+            <h2 class="sidebar-title">SPSO</h2>
+            <a href="/showHistorySPSO" class="sidebar-btn">Lịch sử in</a>
+            <a href="/showRequestQueueSPSO" class="sidebar-btn">Hàng chờ in</a>
+        </div>
+
+        <!-- Phần chính -->
+        <div class="main-content">
+            <!-- Nút thoát -->
+            <a href="/" class="back-icon">
+                <img src="{{ url_for('static', filename='public/images/back-icon.png') }}" alt="Back">
+            </a>
+
+         <!-- Icon máy in -->
+            <div class="printer-icon">
+                <img src="{{ url_for('static', filename='public/images/printer-icon.png') }}" alt="Printer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

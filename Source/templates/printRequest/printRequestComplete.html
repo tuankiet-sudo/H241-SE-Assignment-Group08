@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm yêu cầu in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage/studentOption.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/printRequest/style.css') }}">
+</head>
+<body>
+    <div class="student-container">
+        <!-- Sidebar bên trái -->
+        <div class="sidebar">
+            <a class="logo-container" href="/studentOption">
+                <img src="{{ url_for('static', filename='public/images/hcmut.png') }}" alt="Logo BK" class="logo">
+            </a>
+            <h2 class="sidebar-title">Thêm yêu cầu in</h2>
+            <a href="/printRequest" class="sidebar-btn">Thêm yêu cầu in</a>
+            <a href="/printDocument" class="sidebar-btn">In tài liệu</a>
+            <a href="/studentHistory" class="sidebar-btn">Lịch sử in</a>
+            <a href="/showRequestQueue" class="sidebar-btn">Hàng chờ in</a>
+        </div>
+
+        <!-- Phần chính -->
+        <div class="main-content">
+            <!-- Nút thoát -->
+            <a href="/" class="back-icon">
+                <img src="{{ url_for('static', filename='public/images/back-icon.png') }}" alt="Back">
+            </a>
+
+            <div class="complete-message">
+                <b>Yêu cầu hoàn tất!</b>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

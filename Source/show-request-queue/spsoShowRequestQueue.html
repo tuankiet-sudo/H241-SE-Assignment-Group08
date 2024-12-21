@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Request Queue</title>
+    <link rel="stylesheet" href="css/spsoShowRequestQueue.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/back-icon.css">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="public/logo.png" alt="BK Logo">
+            </div>
+            <h1 class="sidebar-title">SPSO</h1>
+            <button class="sidebar-button">Lịch sử in</button>
+            <button class="sidebar-button" onclick="location.href='spsoShowRequestQueue.html'">Hàng chờ in</button>                   
+        </div>
+        <div class="main-content">
+            <div class="view-queue" id="view-queue">
+                <h2>Xem hàng chờ:</h2>
+                <div class="buttons">
+                    <button class="main-button" onclick="location.href='spsoStudentRequestQueue.html'">Sinh viên</button>
+                    <button class="main-button" onclick="location.href='spsoPrinterRequestQueue.html'">Máy in</button>
+                </div>
+                <a href="homepage.html" class="back-icon">
+                    <img src="public/back-icon.png" alt="Back">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

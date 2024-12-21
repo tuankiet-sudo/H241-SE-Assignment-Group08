@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập (SPSO)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/spsoLogin.css" />
+    <link rel = "stylesheet" type="text/css" href="./css/font.css"/>
+    <link rel = "stylesheet" type="text/css" href="./css/styles.css"/>
+    <link rel = "stylesheet" type="text/css" href="./css/components.css"/>
+</head>
+<body>
+  
+    
+    <div class="login-page">
+          <!-- Icon quay lại -->
+        <a href="homepage.html" class="back-icon">
+            <img src="public/images/back-icon.png" alt="Quay lại" />
+        </a>
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="public/images/hcmut.png" alt="Logo Bách Khoa" class="logo" />
+        </div>
+
+        <!-- Tiêu đề -->
+        <h1 class="login-title">Đăng Nhập</h1>
+
+        <!-- Form -->
+        <div class="login-form">
+            <form action="spsoOption.html" method="GET">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" name="username" placeholder="Tên đăng nhập" required />
+
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" placeholder="Mật khẩu" required />
+
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

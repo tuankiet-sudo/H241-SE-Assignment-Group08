@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử in (SPSO)</title>
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/spso_History.css">
+    <!-- Font-family references -->
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div id="label-image">
+            <img  src="images/hcmut 1.png"/>
+        </div>
+        <h1 id="sidebar_header">SPSO</h1>
+        <ul>
+            <li><a  href="#">
+                <button class="sidebar-link">Lịch sử in</button>
+            </a></li>
+            <li><a  href="#">
+                <button class="sidebar-link">Hàng chờ in</button>
+            </a></li>
+        </ul>
+    </aside>
+    <div id="option-container">
+        <h1 id="choose-header">Xem lịch sử:</h1>
+        <div id="option-wrapper">
+            <button class="btn" style="margin-left: 80px;" id="student_query">Sinh viên</button>
+            <button class="btn" id="printer_query">Máy in</button>
+        </div>
+    </div>
+    <div id="history-section">
+        <div id="input-information">
+            <div class="input-container" id="input-mssv-wrapper">
+                <label class="input-label" for="mssv">Nhập MSSV
+                    <input type="text" id="mssv" placeholder="MSSV" class="date-input">
+                </label>
+                <button class="clear-btn" aria-label="Clear input">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_337_419)">
+                        <path d="M20.4 29L24 25.4L27.6 29L29 27.6L25.4 24L29 20.4L27.6 19L24 22.6L20.4 19L19 20.4L22.6 24L19 27.6L20.4 29ZM24 34C22.6167 34 21.3167 33.7375 20.1 33.2125C18.8833 32.6875 17.825 31.975 16.925 31.075C16.025 30.175 15.3125 29.1167 14.7875 27.9C14.2625 26.6833 14 25.3833 14 24C14 22.6167 14.2625 21.3167 14.7875 20.1C15.3125 18.8833 16.025 17.825 16.925 16.925C17.825 16.025 18.8833 15.3125 20.1 14.7875C21.3167 14.2625 22.6167 14 24 14C25.3833 14 26.6833 14.2625 27.9 14.7875C29.1167 15.3125 30.175 16.025 31.075 16.925C31.975 17.825 32.6875 18.8833 33.2125 20.1C33.7375 21.3167 34 22.6167 34 24C34 25.3833 33.7375 26.6833 33.2125 27.9C32.6875 29.1167 31.975 30.175 31.075 31.075C30.175 31.975 29.1167 32.6875 27.9 33.2125C26.6833 33.7375 25.3833 34 24 34ZM24 32C26.2333 32 28.125 31.225 29.675 29.675C31.225 28.125 32 26.2333 32 24C32 21.7667 31.225 19.875 29.675 18.325C28.125 16.775 26.2333 16 24 16C21.7667 16 19.875 16.775 18.325 18.325C16.775 19.875 16 21.7667 16 24C16 26.2333 16.775 28.125 18.325 29.675C19.875 31.225 21.7667 32 24 32Z" fill="#49454F"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_337_419">
+                        <rect x="4" y="4" width="40" height="40" rx="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                    
+                </button>
+            </div>
+            <div style="width: 300px;" id="select-wrapper">
+                <select name="printer-id" id="dropdown-list">
+                    <option value="" disabled selected hidden>Chọn máy in</option>
+                    <option value="1" >Máy in 1</option>
+                    <option value="2" >Máy in 2</option>
+                    <option value="3" >Máy in 3</option>
+                    <option value="4" >Máy in 4</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="start-date">Nhập ngày bắt đầu (dd-mm-yyyy)
+                    <input type="date" id="start-date" placeholder="Ngày bắt đầu" class="date-input">
+                </label>
+                <button class="clear-btn" aria-label="Clear input">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_337_419)">
+                        <path d="M20.4 29L24 25.4L27.6 29L29 27.6L25.4 24L29 20.4L27.6 19L24 22.6L20.4 19L19 20.4L22.6 24L19 27.6L20.4 29ZM24 34C22.6167 34 21.3167 33.7375 20.1 33.2125C18.8833 32.6875 17.825 31.975 16.925 31.075C16.025 30.175 15.3125 29.1167 14.7875 27.9C14.2625 26.6833 14 25.3833 14 24C14 22.6167 14.2625 21.3167 14.7875 20.1C15.3125 18.8833 16.025 17.825 16.925 16.925C17.825 16.025 18.8833 15.3125 20.1 14.7875C21.3167 14.2625 22.6167 14 24 14C25.3833 14 26.6833 14.2625 27.9 14.7875C29.1167 15.3125 30.175 16.025 31.075 16.925C31.975 17.825 32.6875 18.8833 33.2125 20.1C33.7375 21.3167 34 22.6167 34 24C34 25.3833 33.7375 26.6833 33.2125 27.9C32.6875 29.1167 31.975 30.175 31.075 31.075C30.175 31.975 29.1167 32.6875 27.9 33.2125C26.6833 33.7375 25.3833 34 24 34ZM24 32C26.2333 32 28.125 31.225 29.675 29.675C31.225 28.125 32 26.2333 32 24C32 21.7667 31.225 19.875 29.675 18.325C28.125 16.775 26.2333 16 24 16C21.7667 16 19.875 16.775 18.325 18.325C16.775 19.875 16 21.7667 16 24C16 26.2333 16.775 28.125 18.325 29.675C19.875 31.225 21.7667 32 24 32Z" fill="#49454F"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_337_419">
+                        <rect x="4" y="4" width="40" height="40" rx="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                    
+                </button>
+                
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="end-date">Nhập ngày kết thúc (dd-mm-yyyy)
+                    <input type="date" id="end-date" placeholder="Ngày bắt đầu" class="date-input">
+                </label>
+                <button class="clear-btn" aria-label="Clear input">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_337_419)">
+                        <path d="M20.4 29L24 25.4L27.6 29L29 27.6L25.4 24L29 20.4L27.6 19L24 22.6L20.4 19L19 20.4L22.6 24L19 27.6L20.4 29ZM24 34C22.6167 34 21.3167 33.7375 20.1 33.2125C18.8833 32.6875 17.825 31.975 16.925 31.075C16.025 30.175 15.3125 29.1167 14.7875 27.9C14.2625 26.6833 14 25.3833 14 24C14 22.6167 14.2625 21.3167 14.7875 20.1C15.3125 18.8833 16.025 17.825 16.925 16.925C17.825 16.025 18.8833 15.3125 20.1 14.7875C21.3167 14.2625 22.6167 14 24 14C25.3833 14 26.6833 14.2625 27.9 14.7875C29.1167 15.3125 30.175 16.025 31.075 16.925C31.975 17.825 32.6875 18.8833 33.2125 20.1C33.7375 21.3167 34 22.6167 34 24C34 25.3833 33.7375 26.6833 33.2125 27.9C32.6875 29.1167 31.975 30.175 31.075 31.075C30.175 31.975 29.1167 32.6875 27.9 33.2125C26.6833 33.7375 25.3833 34 24 34ZM24 32C26.2333 32 28.125 31.225 29.675 29.675C31.225 28.125 32 26.2333 32 24C32 21.7667 31.225 19.875 29.675 18.325C28.125 16.775 26.2333 16 24 16C21.7667 16 19.875 16.775 18.325 18.325C16.775 19.875 16 21.7667 16 24C16 26.2333 16.775 28.125 18.325 29.675C19.875 31.225 21.7667 32 24 32Z" fill="#49454F"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_337_419">
+                        <rect x="4" y="4" width="40" height="40" rx="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                    
+                </button>   
+            </div>
+            <button id="search-btn">
+                Tìm kiếm
+            </button>
+        </div>
+    </div>
+        <div id="result">
+            <h2 style="color:white; font-size: 30px; text-align: left; padding-left: 40px; margin-bottom: 20px;  ">Kết quả tìm kiếm:</h2>
+            <div id="result-table">
+            </div>
+        </div>
+
+    <button id="log-out-button">
+        <svg width="63" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 42H10C8.93913 42 7.92172 41.5786 7.17157 40.8284C6.42143 40.0783 6 39.0609 6 38V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H18M32 34L42 24M42 24L32 14M42 24H18" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <script src="./spso_History.js"></script>
+</body>
+</html>

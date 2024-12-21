@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom,#000040 100%, #0000A6 100%);
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.view-queue h2 {
+    font-size: 48px;
+    margin-bottom: 100px;
+    height: 120%;
+    color: #FFFFFF;
+    margin-top: -160px; 
+    margin-left: -150px;
+}
+
+.buttons {
+    display: flex;
+    gap: 300px;
+    margin-bottom: 0px;
+}
+
+.main-button {
+    background: #FFFFFF;
+    color: #101010;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 200px;
+    font-size: 27px;
+}

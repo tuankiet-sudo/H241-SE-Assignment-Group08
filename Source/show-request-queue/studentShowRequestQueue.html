@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Request Queue</title>
+    <link rel="stylesheet" href="css/studentShowRequestQueue.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/back-icon.css">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="public/logo.png" alt="BK Logo">
+            </div>
+            <h1 class="sidebar-title">Hàng chờ in</h1>
+            <button class="sidebar-button">Thêm yêu cầu in</button>
+            <button class="sidebar-button">In tài liệu</button>
+            <button class="sidebar-button">Lịch sử in</button>
+            <button class="sidebar-button" onclick="show()">Hàng chờ in</button>
+        </div>
+        <div class="output-container" id="output-container">
+            <a href="homepage.html" class="back-icon">
+                <img src="public/back-icon.png" alt="Back">
+            </a>
+        </div>
+    </div>
+    <script>
+        function show()
+        {
+            const outputContainer = document.getElementById('output-container');
+            outputContainer.innerHTML = '';
+
+            const results = [
+                { fileName: 'Tên tài liệu 1.docx', printer: 'Máy in: 1', status: 'Đang in' },
+                { fileName: 'Tên tài liệu 2.docx', printer: 'Máy in: 1', status: 'Đang chờ' },
+                { fileName: 'Tên tài liệu 3.docx', printer: 'Máy in: 2', status: 'Đang in' },
+                { fileName: 'Tên tài liệu 4.docx', printer: 'Máy in: 3', status: 'Đang in' },
+                { fileName: 'Tên tài liệu 5.docx', printer: 'Máy in: 3', status: 'Đang chờ' },
+            ];
+
+            results.forEach(result =>{
+
+                const item = document.createElement('div');
+                item.classList.add('result_item');
+
+                const icon = document.createElement('img');
+                icon.src = "public/docs.png"; 
+                icon.alt = "docs icon";
+
+                const details_fileName = document.createElement('div');
+                details_fileName.classList.add('result_details_fileName');
+
+                const details_printer = document.createElement('div');
+                details_printer.classList.add('result_details_printer');
+        
+                const fileName = document.createElement('span');
+                fileName.textContent = result.fileName;
+        
+                const printer = document.createElement('span');
+                printer.textContent = result.printer;
+
+                const status = document.createElement('span');
+                status.textContent = result.status;
+
+                details_fileName.appendChild(fileName);
+                details_printer.appendChild(printer);
+                details_printer.appendChild(status);
+
+                item.appendChild(details_fileName);
+                item.appendChild(icon);
+                item.appendChild(details_printer);
+                
+                outputContainer.appendChild(item);
+            });
+        }
+    </script>
+</body>
+</html>

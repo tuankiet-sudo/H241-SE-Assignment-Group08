@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="main-left">
+                    <div class="inner-logo">
+                        <img src="assets/hcmut 1.png">
+                    </div>
+                    <div class="inner-main-title">
+                        In tài liệu
+                    </div>
+                    <nav class="inner-list">
+                        <ul>
+                            <li>
+                                <div class="inner-add-request func">
+                                    Thêm yêu cầu in
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner-print-document func">
+                                    In tài liệu
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner-print-history func">
+                                    Lịch sử in
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner-print-stack func">
+                                    Hàng chờ in
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-right">
+                    <div class="inner-logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                    <div id="content-area">
+                        <div class="content_download" onclick="changeContent('new-content')">
+                            Tải tài liệu lên
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeContent(newContent) {
+    const contentArea = document.getElementById('content-area');
+    if (newContent === 'new-content') {
+        contentArea.innerHTML = `
+            <div class="new-content">
+    <div class="image-container">
+        <img src="assets/downloaded.jpg" alt="Image Description">
+    </div>
+    <div class="options-container">
+        <div class="option">
+            <label for="printer">Chọn máy in</label>
+            <select id="printer">
+                <option value="printer1">Máy in 1</option>
+                <option value="printer2">Máy in 2</option>
+                <option value="printer3">Máy in 3</option>
+                <option value="printer4">Máy in 4</option>
+            </select>
+        </div>
+        <div class="option">
+            <label for="side">Chọn mặt</label>
+            <select id="side">
+                <option value="single">1 mặt</option>
+                <option value="double">2 mặt</option>
+            </select>
+        </div>
+        <div class="option">
+            <label for="size">Chọn kích thước</label>
+            <select id="size">
+                <option value="a2">A2</option>
+                <option value="a3">A3</option>
+                <option value="a4">A4</option>
+                <option value="a5">A5</option>
+            </select>
+        </div>
+    </div>
+    <div class="complete-btn">
+        <button id="completeBtn">Hoàn tất yêu cầu</button>
+    </div>
+</div>
+        `;
+
+        document.getElementById("completeBtn").addEventListener("click", completeRequest);
+    }
+}
+
+function completeRequest() {
+    const contentArea = document.getElementById('content-area');
+    contentArea.innerHTML = `
+        <div class="complete-message">
+            <b>Yêu cầu hoàn tất!</b>
+        </div>
+    `;
+}
+    </script>
+</body>
+</html>
